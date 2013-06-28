@@ -1,0 +1,12 @@
+date:2013-06-28 23:37:08 +0300
+author:123
+content:568
+=====
+date:2013-06-28 23:48:58 +0300
+author:lfg
+content:khyk
+=====
+date:2013-06-28 23:59:45 +0300
+author:vdfvbfd
+content:vdfvdf
+=====
