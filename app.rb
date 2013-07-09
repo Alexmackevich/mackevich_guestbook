@@ -17,23 +17,24 @@ def read_posts
 	content = File.open("posts.txt") do |file|
 		file.read
 	end
-	unparsed_posts = content.split("=====\n")
-	text = /^date:\s(.+)\nauthor:\s(.+)\ncontent:\s(.+)$/
-	posts ||= []
+# 	unparsed_posts = content.split("=====\n")
+# 	text = /^date:\s(.+)\nauthor:\s(.+)\ncontent:\s(.+)$/
+# 	posts ||= []
 
-  unparsed_posts.each do |post|
-    text =~ post.gsub(/\r\n/, '\n')
+#   unparsed_posts.each do |post|
+#     text =~ post.gsub(/\r\n/, '\n')
 
-    parse_data = Regexp.last_match
+#     parse_data = Regexp.last_match
 
-    parsed_post = Hash.new
-    parsed_post[:date] = parse_data[1].strip.chomp
-    parsed_post[:author] = parse_data[2].strip.chomp
-    parsed_post[:content] = parse_data[3].strip.chomp
+#     parsed_post = Hash.new
+#     parsed_post[:date] = parse_data[1].strip.chomp
+#     parsed_post[:author] = parse_data[2].strip.chomp
+#     parsed_post[:content] = parse_data[3].strip.chomp
 
-    posts << parsed_post
-end
-end
+#     posts << parsed_post
+# end
+# posts
+ end
 
 
 def write_post (author, content)
