@@ -1,2 +1,2 @@
-mackevich-guestbook.herokuapp.com
+http://mackevich-guestbook.herokuapp.com
 ===================
