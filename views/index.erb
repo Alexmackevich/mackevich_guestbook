@@ -1,21 +1,28 @@
 <!DOCTYPE HTML>
 
-<html>
-<head>
-<title> Sinatra guestbook </title>	
-</head>
+<html lang="en">
+	<head>
+	<title> Sinatra guestbook </title>	
+	</head>
 
 <body>
-<h2>
+	<div class="center hero-unit">
+<h1>
 	Sinatra guestbook
-</h2>
+</h1>
+<h2>
+	You can leave your message here
+</h2><br/>
+<a href="/clear">Clear guestbook</a></li>
+</div> 
+<%= @posts %>
 
 <form action="/" method="post">
-<legend>Leave your content here</legend><br/>
-Author: <br/><input type="text"  name="author"/></br/>
-Content:<br/><textarea type="text" col="40" rows="5" name="content"></textarea><br/>
-<br/>
-<input type="submit" text="Send"/>
+	Author: <br/><input type="text"  name="author"/></br/>
+	Content:<br/><textarea type="text" col="40" rows="5" name="content"></textarea><br/>
+	<br/>
+	<input type="submit" value="Send"/><br/>
+	<input type= "reset" value= "Clear fileds"/>
 </form>
 </body>
 </html>
